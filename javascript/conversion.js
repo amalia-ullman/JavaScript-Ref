@@ -11,5 +11,5 @@ function fahrenheit(){
     fahrenheitInputBox.value = ((celsius * (9/5)) + 32).toFixed(4)
 }
 
-fahrenheitInputBox.addEventListener("change", celsius);
-celsiusInputBox.addEventListener("change", fahrenheit);
+fahrenheitInputBox.addEventListener("input", celsius);
+celsiusInputBox.addEventListener("input", fahrenheit);
