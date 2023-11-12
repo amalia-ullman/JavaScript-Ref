@@ -4,10 +4,6 @@ const moviesList = document.getElementById('moviesList');
 const titleInputBox = document.getElementById('movieTitle');
 
 
-
-
-
-
 function removeAll(){
     let allMovies = moviesList.children;
 
