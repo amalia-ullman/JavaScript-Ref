@@ -14,6 +14,9 @@ function checkAMPM(){
         ampmText.textContent = "AM";
     }
     else{
+        if(parseInt(hourText.textContent) > 12){
+            hourText.textContent = parseInt(hourText.textContent) - 12;
+        }
         ampmText.textContent = "PM";
     }
 }
