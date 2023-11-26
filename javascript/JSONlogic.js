@@ -29,6 +29,31 @@ function populateHeroes(obj){
     const heroes = obj.members;
     console.log(heroes);
 
+    for (const hero of heroes){
+        const article = document.createElement('article');
+        const h2 = document.createElement('h2');
+        const p1 = document.createElement('p');
+        const p2 = document.createElement('p');
+        const p3 = document.createElement('p');
+        const ul = document.createElement('ul');
+
+        h2.textContent = hero.name;
+        p1.textContent = `Secret Identity: ${hero.secretIdentity}`;
+        p2.textContent = `Age: ${hero.age}`;
+        p3.textContent = "Superpowers: ";
+        for (const power of hero.powers){
+            const li = document.createElement('li');
+            li.textContent = power;
+            ul.appendChild(li);
+        }
+        article.appendChild(h2);
+        article.appendChild(p1);
+        article.appendChild(p2);
+        article.appendChild(p3);
+        article.appendChild(ul);
+        section.appendChild(article);
+    }
+
 }
 
 populate();
