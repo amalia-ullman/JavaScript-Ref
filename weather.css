@@ -1,0 +1,19 @@
+div{
+    border: 1px solid red;
+}
+.icon{
+    float: left;
+}
+.temperature{
+    font-size: 2.25rem;
+    display: inline;
+}
+.stats{
+    border: 1px solid blue;
+    float: right;
+    font-size: 0.75rem;
+    color: gray;
+}
+.weatherCard{
+    width: 20%;
+}
