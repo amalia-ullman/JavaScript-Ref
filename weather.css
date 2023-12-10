@@ -1,6 +1,4 @@
-div{
-    border: 1px solid red;
-}
+
 .icon{
     float: left;
 }
@@ -9,7 +7,6 @@ div{
     display: inline;
 }
 .stats{
-    border: 1px solid blue;
     float: right;
     font-size: 0.75rem;
     color: gray;
