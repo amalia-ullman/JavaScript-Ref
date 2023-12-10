@@ -13,26 +13,26 @@
         <div class="row">
             <div class="six columns">
                 <form name="weather" action="">
-                    <input id="searchINput" type="text" placeholder="Location (Zipcode or City)">
+                    <input id="searchInput" type="text" placeholder="Location (Zipcode or City)" required>
                     <button type="button" class="button-primary" id="gobtn" onclick="fetchWeatherData()">Go</button>
                 </form>
             </div>
-            <div class="six columns">
+            <div id="card" class="six columns" style="visibility:hidden">
                 <div class="row">
                     <!-- Location & Forecast  -->
                     <div class="six columns">
-                        <h5>Las Vegas, NV</h5>
-                        <h5>Partly Cloudy</h5>
+                        <h5 id="city">_____</h5>
+                        <h5 id="forecast">_____</h5>
                     </div>
                     <div class="six columns">
                         <div class="row">
                             <!-- Icon  -->
-                            <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png">
+                            <img id="icon" src="https://ssl.gstatic.com/onebox/weather/64/sunny.png">
                         </div>
                         <div class="row">
                             <!-- Temp & other Stats  -->
-                            <h1>51°F</h1>
-                            <h5>Humidity: 17%</h5>
+                            <h1 id="temp">_____</h1>
+                            <h5 id="humidity">_____</h5>
                         </div>
                     </div>
                 </div>
