@@ -2,7 +2,7 @@ async function fetchWeatherData(){
 
     const body = document.getElementById("body");
     body.classList.add('day');
-    
+
     const location = document.getElementById("searchInput").value;
     const requestURL =  "https://api.weatherapi.com/v1/current.json?key=985a2db26c794b5ab87185757231012&q=" + location;
     fetchAstroData(location);
@@ -27,6 +27,7 @@ function populateWeatherCard(obj){
     const forecast = document.getElementById('forecast');
     const icon = document.getElementById('icon');
     const humidity = document.getElementById('humidity');
+    const time = document.getElementById('time');
 
     card.style.visibility="visible";
     city.textContent = obj.location.name;
@@ -34,6 +35,7 @@ function populateWeatherCard(obj){
     forecast.textContent = obj.current.condition.text;
     icon.src = obj.current.condition.icon;
     humidity.textContent = `Humidity: ${obj.current.humidity}%`
+    time.textContent = `LocalTime: ${obj.location.localtime.slice(-5)}`
 }
 
 function setErrorBadgeTo(visibility){

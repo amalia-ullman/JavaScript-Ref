@@ -14,6 +14,10 @@
     width: 20%;
 }
 
+#card {
+    color:white;
+}
+
 #error-badge{
     height: 80px;
     width: 100vw;
@@ -24,6 +28,10 @@
     top: 40vh;
     z-index: 2;
     color:white;
+}
+
+#error-badge h1{
+    line-height: 80px;
 }
 
 .visible {
@@ -41,6 +49,7 @@
     background: linear-gradient(0deg, hsla(211, 36%, 66%, 1) 0%, hsla(206, 87%, 49%, 1) 99%, hsla(204, 70%, 49%, 1) 100%);
 
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#88A6C7", endColorstr="#118CEB", GradientType=1 );
+    
 }
 
 .night {
