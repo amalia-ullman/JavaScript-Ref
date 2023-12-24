@@ -33,3 +33,21 @@
 .invisible {
     visibility: hidden;
 }
+
+.day {
+    height: 100vh;
+    background: hsla(211, 36%, 66%, 1);
+
+    background: linear-gradient(0deg, hsla(211, 36%, 66%, 1) 0%, hsla(206, 87%, 49%, 1) 99%, hsla(204, 70%, 49%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#88A6C7", endColorstr="#118CEB", GradientType=1 );
+}
+
+.night {
+    height: 100vh;
+    background: hsla(324, 34%, 55%, 1);
+
+    background: linear-gradient(0deg, hsla(324, 34%, 55%, 1) 0%, hsla(206, 88%, 27%, 1) 99%, hsla(204, 70%, 49%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#B36493", endColorstr="#084D82", GradientType=1 );
+}
