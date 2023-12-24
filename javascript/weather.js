@@ -1,4 +1,12 @@
 async function fetchWeatherData(){
+    
+    const errorbadge = document.getElementById("error-badge");
+
+    if(errorbadge.classList.contains('visible')){
+        errorbadge.classList.remove('visible');
+        errorbadge.classList.add('invisible');
+    }
+
     const location = document.getElementById("searchInput").value;
     const requestURL =  "https://api.weatherapi.com/v1/current.json?key=985a2db26c794b5ab87185757231012&q=" + location;
     const request = new Request(requestURL);
@@ -6,9 +14,11 @@ async function fetchWeatherData(){
     const data = await response.json();
 
     if(data.error){
-        alert(`Unable to complete request. ${data.error.message}`);
-        const errorbadge = document.getElementById("error-badge")
-        errorbadge.style.visibility="visible";
+        // console.error(`Unable to complete request. ${data.error.message}`);
+        if(errorbadge.classList.contains('invisible')){
+            errorbadge.classList.remove('invisible');
+            errorbadge.classList.add('visible');
+        }
     }
     else{
         populateWeatherCard(data);

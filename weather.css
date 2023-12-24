@@ -18,11 +18,18 @@
     height: 80px;
     width: 100vw;
     background-color: rgb(255,0,0, 0.45);
-    /* visibility:hidden; */
     text-align: center;
     position: fixed;
     left: 0;
     top: 40vh;
     z-index: 2;
     color:white;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.invisible {
+    visibility: hidden;
 }
