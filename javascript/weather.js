@@ -7,6 +7,8 @@ async function fetchWeatherData(){
 
     if(data.error){
         alert(`Unable to complete request. ${data.error.message}`);
+        const errorbadge = document.getElementById("error-badge")
+        errorbadge.style.visibility="visible";
     }
     else{
         populateWeatherCard(data);
