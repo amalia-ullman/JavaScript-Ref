@@ -50,7 +50,7 @@ function setErrorBadgeTo(visibility){
 }
 
 async function fetchAstroData(location){
-    const requestURL = "http://api.weatherapi.com/v1/astronomy.json?key=985a2db26c794b5ab87185757231012&q=" + location;
+    const requestURL = "https://api.weatherapi.com/v1/astronomy.json?key=985a2db26c794b5ab87185757231012&q=" + location;
     const request = new Request(requestURL);
     const response = await fetch(request);
     const data = await response.json();
