@@ -1,3 +1,10 @@
+const input = document.getElementById("searchInput");
+    input.addEventListener("keydown", function(e) {
+        if(e.code == "Enter"){
+            fetchWeatherData(location);
+        }
+    });
+
 async function fetchWeatherData(){
 
     const body = document.getElementById("body");
