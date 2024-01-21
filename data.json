@@ -1,0 +1,74 @@
+{
+    "packages": [
+        {
+            "id": 1,
+            "name": "express",
+            "year": 2010,
+            "author": "TJ Holowaychuk",
+            "URL": "https://expressjs.com/"
+        },
+        {
+            "id": 2,
+            "name": "React",
+            "year": 2013,
+            "author": "Jordan Walke",
+            "URL": "https://react.dev/"
+        },
+        {
+            "id": 3,
+            "name": "Velocity",
+            "year": 2018,
+            "author": "Julian Shapiro",    
+            "URL": "http://velocityjs.org/"
+        },
+        {
+            "id": 4,
+            "name": "Babylon",
+            "year": 2013,
+            "author": "David Catuhe",
+            "URL": "https://www.babylonjs.com/"
+        },
+        {
+            "id": 5,
+            "name": "Three",
+            "year": 2010,
+            "author": "Ricardo Cabello",
+            "URL": "https://threejs.org/"
+        },
+        {
+            "id": 6,
+            "name": "Angular",
+            "year": 2010,
+            "author": "Miško Hevery",
+            "URL": "https://angularjs.org/"
+        },
+        {
+            "id" : 7,
+            "name": "Meteor",
+            "year": 2012,
+            "author": "Meteor Software",
+            "URL": "https://www.meteor.com/"
+        },
+        {
+            "id": 8,
+            "name": "Next",
+            "year": 2016,
+            "author": "Guillermo Rauch",
+            "URL": "https://nextjs.org/"
+        },
+        {
+            "id": 9,
+            "name": "Backbone",
+            "year": 2010,
+            "author": "Jeremy Ashkenas",
+            "URL": "https://backbonejs.org/"
+        },
+        {
+            "id": 10,
+            "name": "Ember",
+            "year": 2011,
+            "author": "Yehuda Katz",
+            "URL": "https://emberjs.com/"
+        }
+    ]
+}
