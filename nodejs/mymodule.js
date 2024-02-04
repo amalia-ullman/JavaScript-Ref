@@ -1,16 +1,17 @@
 const fs = require('fs');
 
 module.exports = function(directory, filter, callback){
-    fs.readdir(directory, 'utf8', function callback(err, data) {
+    fs.readdir(directory, 'utf8', (err, data) => {
+        let fileArray = [];
         if(err){
-            return err;
+            return callback(err);
         }
-        list.forEach(file => {
+        data.forEach(file => {
             if(file.split(".")[1] === filter){
-                console.log(file);
+                fileArray.push(file);
             }
         })
-        callback(null, data);
+        callback(null, fileArray);
     })
 }
 
