@@ -3,13 +3,13 @@ const fs = require('fs');
 const directory = process.argv[2];
 const filter = process.argv[3];
 
-fs.readFile(directory, 'utf8', (err, data) => {
+fs.readdir(directory, 'utf8', function callback(err, list) {
     if(err){
         return err;
     }
-    data.split('\n').forEach(file => {
-        if(file.substr(file.length-4) == "."+filter){
-            console.log(file + '\n');
+    list.forEach(file => {
+        if(file.split(".")[1] === filter){
+            console.log(file);
         }
     })
 })
