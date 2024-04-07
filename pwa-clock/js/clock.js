@@ -23,7 +23,6 @@ function checkAMPM(){
 }
 
 function setTime(){
-    console.log("SetTime");
     seconds = parseInt(secondText.textContent);
     minutes = parseInt(minuteText.textContent);
     hours = parseInt(hourText.textContent);

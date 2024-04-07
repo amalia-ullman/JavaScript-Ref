@@ -2,9 +2,11 @@
     "name": "Clock",
     "short_name": "clock",
     "description": "shows the time",
+    "id" : "com.m.pwa-clock",
     "orientation": "portrait",
     "start_url": "../pwa-clock/index.html",
     "display": "standalone",
+    "background_color": "#FFFFFF",
     "icons":[
         {
            "src": "icons/android-chrome-192x192.png",
