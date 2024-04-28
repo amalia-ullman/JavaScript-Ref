@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='manifest' href='/manifest.json')
+    link(rel='icon' href='/images/icons/favicon.ico')
+  body
+    block content
+  script(src='/javascripts/clock.js')
+  script(src='/javascripts/sw.js')
+  script.
+    if('serviceWorker' in navigator){
+            window.addEventListener('load', function (){
+                navigator.serviceWorker.register('/javascripts/sw.js').then(function(registration){
+                    console.log("Service Worker registration successful with scope: ", registration.scope);
+                },function(err){
+                    console.log("Service Worker registration failed: ", err);
+                })
+            })
+        }
